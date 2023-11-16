@@ -1,0 +1,67 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project xmlns="http://maven.apache.org/POM/4.0.0" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/xsd/maven-4.0.0.xsd">
+    <modelVersion>4.0.0</modelVersion>
+    <groupId>com.tehbeard</groupId>
+    <artifactId>BeardSort</artifactId>
+    <version>1.0-SNAPSHOT</version>
+    <packaging>jar</packaging>
+    
+     <properties>
+        <project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
+        <maven.compiler.target>17</maven.compiler.target>
+        <maven.compiler.source>17</maven.compiler.source>
+        <project.server.version>1.20.1-R0.1-SNAPSHOT</project.server.version>
+        <project.slime.version>1.20-R0.1-SNAPSHOT</project.slime.version>
+    </properties>
+    
+    <repositories>
+        
+        <repository>
+            <id>worldedit</id>
+            <name>WorldEdit etc</name>
+            <url>https://maven.enginehub.org/repo/</url>
+        </repository>
+        
+
+        <!-- Repository for Bukkit -->
+        <repository>
+            <id>paper-repo</id>
+            <url>https://papermc.io/repo/repository/maven-public/</url>
+        </repository>
+
+        <repository>
+            <id>minecraft-libraries</id>
+            <name>Minecraft Libraries</name>
+            <url>https://libraries.minecraft.net</url>
+        </repository>        
+        
+    </repositories>
+    
+    <dependencies>
+
+           
+        <dependency>
+            <groupId>io.papermc.paper</groupId>
+            <artifactId>paper-api</artifactId>
+            <version>${project.server.version}</version>
+            <scope>provided</scope>
+        </dependency>
+        
+    </dependencies>
+
+
+    <build>
+        <resources>
+
+            <resource>
+                <targetPath>.</targetPath>
+                <filtering>true</filtering>
+                <directory>${basedir}/src/main/resources/</directory>
+            </resource>
+
+
+        </resources>
+    </build>
+    
+    
+</project>

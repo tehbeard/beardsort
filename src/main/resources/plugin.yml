@@ -1,0 +1,5 @@
+name: BeardSort
+version: "1.0"
+main: com.tehbeard.beardsort.BeardSortPlugin
+api: 1.20
+api-version: 1.13
